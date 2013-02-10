@@ -18,6 +18,8 @@
 - (IBAction)generate:(id)sender {
     NSString *title = [_tfTitle stringValue];
     NSString *group = [_tfGroup stringValue];
+    if ([group isEqual: @"Automatic"])
+        group = @"&filter=3";
     NSString *resolution = [_pbResolution titleOfSelectedItem];
     if ([resolution isEqual: @"720p"])
         resolution = @"-480p+-1080p+-XviD";
@@ -25,9 +27,12 @@
     if ([source isEqual: @"TV"])
         source = @"-BD";
     NSString *init = @"http://www.nyaa.eu/?page=rss&term=";
-    _tfRSS.stringValue = [NSString stringWithFormat:@"%@%@+%@+%@+%@",init, title, group,resolution, source];
+    _tfRSS.stringValue = [NSString stringWithFormat:@"%@%@+%@+%@+%@",init, title,resolution, source, group];
     
 }
 - (IBAction)copy:(id)sender {
+    NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+    [pasteBoard declareTypes:[NSArray arrayWithObjects:NSStringPboardType, nil] owner:nil];
+    [pasteBoard setString: [_tfRSS stringValue] forType:NSStringPboardType];
 }
 @end
