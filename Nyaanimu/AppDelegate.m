@@ -22,11 +22,17 @@
         group = @"&filter=3";
     NSString *resolution = [_pbResolution titleOfSelectedItem];
     if ([resolution isEqual: @"720p"])
-        resolution = @"-480p+-1080p+-XviD";
+        resolution = @"-480+-1080+-XviD";
+    else if ([resolution isEqual: @"1080p"])
+        resolution = @"1080";
+    else if ([resolution isEqual: @"480p"])
+        resolution = @"480";
     NSString *source = [_pbSource titleOfSelectedItem];
     if ([source isEqual: @"TV"])
-        source = @"-BD";
-    NSString *init = @"http://www.nyaa.eu/?page=rss&term=";
+        source = @"-BD+-\"Blu-Ray\"";
+    else source = @"BD|\"Blu-Ray\"";
+    
+    NSString *init = @"http://www.nyaa.eu/?page=rss&cats=1_37&term=";
     _tfRSS.stringValue = [NSString stringWithFormat:@"%@%@+%@+%@+%@",init, title,resolution, source, group];
     
 }
