@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A70242E16DAD71400A62D37 /* ForwardArrowIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A70242D16DAD71400A62D37 /* ForwardArrowIcon.png */; };
 		3A9DC51116C6DEFC009B0895 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9DC51016C6DEFC009B0895 /* Cocoa.framework */; };
 		3A9DC51B16C6DEFC009B0895 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A9DC51916C6DEFC009B0895 /* InfoPlist.strings */; };
 		3A9DC51D16C6DEFC009B0895 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9DC51C16C6DEFC009B0895 /* main.m */; };
@@ -17,8 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A70242C16DAD6E100A62D37 /* Icon */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Icon"; sourceTree = "<group>"; };
-		3A70242D16DAD71400A62D37 /* ForwardArrowIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForwardArrowIcon.png; sourceTree = "<group>"; };
 		3A9DC50D16C6DEFC009B0895 /* Nyaanimu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nyaanimu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9DC51016C6DEFC009B0895 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3A9DC51316C6DEFC009B0895 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,19 +43,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A70242B16DAD6E100A62D37 /* ForwardArrowIcon */ = {
-			isa = PBXGroup;
-			children = (
-				3A70242C16DAD6E100A62D37 /* Icon */,
-			);
-			path = ForwardArrowIcon;
-			sourceTree = "<group>";
-		};
 		3A9DC50416C6DEFC009B0895 = {
 			isa = PBXGroup;
 			children = (
-				3A70242D16DAD71400A62D37 /* ForwardArrowIcon.png */,
-				3A70242B16DAD6E100A62D37 /* ForwardArrowIcon */,
 				3A9DC51616C6DEFC009B0895 /* Nyaanimu */,
 				3A9DC50F16C6DEFC009B0895 /* Frameworks */,
 				3A9DC50E16C6DEFC009B0895 /* Products */,
@@ -169,7 +156,6 @@
 				3A9DC51B16C6DEFC009B0895 /* InfoPlist.strings in Resources */,
 				3A9DC52116C6DEFC009B0895 /* Credits.rtf in Resources */,
 				3A9DC52716C6DEFD009B0895 /* MainMenu.xib in Resources */,
-				3A70242E16DAD71400A62D37 /* ForwardArrowIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
